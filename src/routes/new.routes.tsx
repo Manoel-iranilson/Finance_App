@@ -7,16 +7,6 @@ import expenditure from "../screens/New/expenditure/Indes";
 const routes: React.FC = () => {
   const Tab = createMaterialTopTabNavigator();
 
-  const isTabBarVisible = (route) => {
-    const routeName = route.state
-      ? route.state.routes[route.state.index]?.name
-      : route.params
-      ? route.params.screen
-      : "Home";
-
-    return !["revenue"].includes(routeName);
-  };
-
   return (
     <Tab.Navigator initialRouteName="revenue">
       <Tab.Screen
