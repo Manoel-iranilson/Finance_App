@@ -18,10 +18,7 @@ const routes: React.FC = () => {
   };
 
   return (
-    <Tab.Navigator
-      initialRouteName="revenue"
-      screenOptions={({ route }) => ({ tabBarVisible: isTabBarVisible(route) })}
-    >
+    <Tab.Navigator initialRouteName="revenue">
       <Tab.Screen
         name="revenue"
         component={revenue}
