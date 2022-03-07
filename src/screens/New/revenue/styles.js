@@ -55,3 +55,15 @@ export const ViewCate = styled(View)`
   border-color: gray;
   padding: 20px;
 `;
+
+export const BtnEnviar = styled(View)`
+  border-width: 2px;
+  border-radius: 100px;
+  border-color: #3cb371;
+  margin-top: 30px;
+  height: 100px;
+  width: 100px;
+  background-color: #3cb371;
+  justify-content: center;
+  align-items: center;
+`;

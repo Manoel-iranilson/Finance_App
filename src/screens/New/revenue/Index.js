@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { StatusBar } from "react-native";
 
+import AntDesign from "react-native-vector-icons/AntDesign";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import { useNavigation } from "@react-navigation/native";
 import {
@@ -13,6 +14,7 @@ import {
   ViewDesc,
   TextDesc,
   ViewCate,
+  BtnEnviar,
 } from "./styles";
 
 import Categories from "../../../components/Categories.revenue/index";
@@ -78,10 +80,18 @@ const revenue = ({ route }) => {
             </ViewCate>
           </TouchableOpacity>
         </View>
-
-        <TouchableOpacity onPress={() => enviar()}>
-          <Text>Enviar </Text>
-        </TouchableOpacity>
+        <View
+          style={{
+            alignItems: "center",
+            marginTop: 20,
+          }}
+        >
+          <BtnEnviar>
+            <TouchableOpacity onPress={() => enviar()}>
+              <AntDesign name="check" color={"#fff"} size={50} />
+            </TouchableOpacity>
+          </BtnEnviar>
+        </View>
       </ViewDetails>
       <Modalize ref={modalizeRef} snapPoint={400}>
         <View>
