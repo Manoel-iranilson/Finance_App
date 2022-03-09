@@ -2,7 +2,7 @@ import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 
 import revenue from "../screens/New/revenue/Index";
-import expenditure from "../screens/New/expenditure/Indes";
+import expenditure from "../screens/New/expenditure/Index";
 
 const routes: React.FC = () => {
   const Tab = createMaterialTopTabNavigator();
