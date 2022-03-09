@@ -9,12 +9,13 @@ import {
   Photo,
   Greenbar,
   Viewbalance,
-  ViewUsuario,
   IconEyes,
 } from "./styles";
 import Entypo from "react-native-vector-icons/Entypo";
 import Feather from "react-native-vector-icons/Feather";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+
+import Historico from "../../components/Historico/index";
 
 const Home: React.FC = ({ route }) => {
   const [add, setAdd] = React.useState<number>(0);
@@ -88,6 +89,7 @@ const Home: React.FC = ({ route }) => {
             </Viewbalance>
           </View>
         </Date>
+        <Historico />
       </Container>
     );
   }
