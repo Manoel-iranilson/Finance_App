@@ -8,7 +8,7 @@ export const Container = styled(SafeAreaView)`
 `;
 
 export const ViewAdd = styled(View)`
-  background-color: #fa8072;
+  background-color: #2e8b57;
   height: 150px;
   justify-content: center;
   padding: 30px;

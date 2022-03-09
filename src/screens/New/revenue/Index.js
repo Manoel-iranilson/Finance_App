@@ -44,15 +44,8 @@ const revenue = ({ route }) => {
 
   return (
     <Container>
-      <StatusBar backgroundColor="#FA8072" />
+      <StatusBar backgroundColor="#2E8B57" />
       <ViewAdd>
-        {/* <TextAdd
-          defaultValue={""}
-          keyboardType="numeric"
-          value={String(add)}
-          mask={Masks.BRL_CURRENCY}
-          onChangeText={(texto) => setAdd(texto)}
-        /> */}
         <TextAdd
           value={add}
           keyboardType="numeric"
