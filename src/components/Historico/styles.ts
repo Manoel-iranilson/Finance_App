@@ -23,11 +23,10 @@ export const Dados = styled(View)`
     margin-top: 5px;
     width: 250px ;
     border-width: 1px;
-    border-color:#2E8B57 ;
+    border-color:#000;
     border-radius: 5px ;
     padding: 4px;
     flex-direction: row ;
-    background-color:#3CB371;
     
 `
 

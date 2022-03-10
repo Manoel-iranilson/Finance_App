@@ -13,11 +13,18 @@ const index: React.FC = (route) => {
           <Text>Historico</Text>
         </Title>
 
-        <Dados>
+        <Dados style={{ backgroundColor: "#3CB371" }}>
           <FontAwesome name="money" size={35} color="#3b5998" />
-          <View style={{ paddingLeft: 5 }}>
+          <View>
             <Texto>Categoria:Investimentos</Texto>
-            <Texto>Valor: 200</Texto>
+            <Texto>Valor: 200,0</Texto>
+          </View>
+        </Dados>
+        <Dados style={{ backgroundColor: "#FA8072" }}>
+          <AntDesign name="shoppingcart" size={35} color="#3b5998" />
+          <View style={{ paddingLeft: 5 }}>
+            <Texto>Categoria:Alimentação</Texto>
+            <Texto>Valor: 100,0</Texto>
           </View>
         </Dados>
       </Historico>
