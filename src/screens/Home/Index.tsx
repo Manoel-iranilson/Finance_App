@@ -17,7 +17,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import Historico from "../../components/Historico/index";
 
-const Home: React.FC = ({ route }) => {
+const Home: React.FC = ({ route }: any) => {
   const [add, setAdd] = React.useState<number>(0);
   const [saldo, setSaldo] = React.useState<number>(0);
   const [res, setRes] = React.useState<number>(saldo);
@@ -77,7 +77,7 @@ const Home: React.FC = ({ route }) => {
             <Viewbalance>
               <View>
                 <Text style={{ fontSize: 15, color: "gray" }}>Saldo Geral</Text>
-                <Text style={{ fontSize: 20 }}> {saldo} </Text>
+                <Text style={{ fontSize: 20 }}> 100,0 </Text>
               </View>
               <IconEyes>
                 <TouchableOpacity onPress={() => ChangeVision()}>
